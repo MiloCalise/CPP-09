@@ -6,7 +6,7 @@
 /*   By: miltavar <miltavar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 13:23:31 by miltavar          #+#    #+#             */
-/*   Updated: 2026/02/12 12:48:04 by miltavar         ###   ########.fr       */
+/*   Updated: 2026/03/19 11:54:18 by miltavar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ private:
 	bool	isValidDate(const std::string& date);
 	bool	isValidValue(const std::string& value);
 	float	getExchangeRate(const std::string& date);
-public:
-	BitcoinExchange();
 	BitcoinExchange(const BitcoinExchange& copy);
 	BitcoinExchange&	operator=(const BitcoinExchange& copy);
+public:
+	BitcoinExchange();
 	~BitcoinExchange();
 	void	loadDatabase(const std::string& str);
 	void	loadInput(const std::string& str);

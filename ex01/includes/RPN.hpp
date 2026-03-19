@@ -6,7 +6,7 @@
 /*   By: miltavar <miltavar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 11:49:34 by miltavar          #+#    #+#             */
-/*   Updated: 2026/02/12 12:48:48 by miltavar         ###   ########.fr       */
+/*   Updated: 2026/03/19 11:58:02 by miltavar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ private:
 	std::stack<int>	_pile;
 	void			apply_op(char op);
 	bool			isNumber(std::string& token);
+	RPN&			operator=(const RPN& copy);
+	RPN(const RPN& copy);
 public:
 	RPN();
-	RPN(const RPN& copy);
-	RPN&	operator=(const RPN& copy);
 	~RPN();
 	void	processLine(std::string& str);
 };

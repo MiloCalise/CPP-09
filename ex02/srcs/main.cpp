@@ -6,7 +6,7 @@
 /*   By: miltavar <miltavar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 12:51:44 by miltavar          #+#    #+#             */
-/*   Updated: 2026/02/14 14:17:50 by miltavar         ###   ########.fr       */
+/*   Updated: 2026/03/19 12:08:09 by miltavar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(int argc, char **argv)
 	struct timeval end;
 
 	if (argc < 2)
-		return (std::cerr << "list of integer requires" << std::endl, 1);
+		return (std::cerr << "list of integers required" << std::endl, 1);
 	try
 	{
 		for (int i = 1; i < argc; i++)
