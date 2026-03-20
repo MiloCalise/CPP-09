@@ -25,6 +25,8 @@ void	RPN::apply_op(char op)
 	int	a;
 	int	b;
 
+	if (_pile.empty())
+        throw std::runtime_error("Error: RPN failed");
 	a = _pile.top();
 	_pile.pop();
 	b = _pile.top();
